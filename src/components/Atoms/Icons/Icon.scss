@@ -1,0 +1,24 @@
+@import "/src/globalStyles/tools";
+
+.icon {
+    width: var(--icon-S);
+    max-height: var(--icon-S);
+
+    @include MQ ($tablet) {
+        width: var(--icon-M);
+        max-height: var(--icon-M);
+    }
+
+    @include MQ ($desktop) {
+        width: var(--icon-L);
+        max-height: var(--icon-L);
+    }
+
+    .whiteIcon {
+        fill: var(--color-pearl);
+    }
+
+    &--btn {
+        width: var(--icon-S);
+    }
+}

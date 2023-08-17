@@ -1,0 +1,56 @@
+@import "/src/globalStyles/tools";
+
+.filter {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: var(--gap-L);
+    position: relative;
+    @include paddingX();
+    padding-bottom: var(--gap-XL);
+
+    button {
+        background-color: var(--bg-color-pearl);
+
+        &:hover {
+            background-color: var(--bg-color-greyscale9);
+        }
+
+        @include MQ ($tablet) {
+            background-color: transparent;
+        }
+
+        &.filter__btn {
+            background-color: transparent;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+
+        &:hover {
+            border: none;
+            border-radius: 0;
+            color: var(--color-greyscale9);
+        }
+    }
+
+    @include MQ ($tablet) {
+        align-items: center;
+        justify-content: center;
+        padding-bottom: var(--gap-XL);
+    }
+
+    &__wrap {
+        position: absolute;
+        display: inline-flex;
+        flex-direction: column;
+        top: 3.5rem;
+        gap: var(--gap-S);
+        z-index: 3;
+        transition: 0.3s ease-in-out;
+    }
+}

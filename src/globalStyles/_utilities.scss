@@ -1,0 +1,21 @@
+.extragap {
+    @include MQ($tablet) {
+      gap: var(--gap-L);
+    }
+    @include MQ($desktop) {
+      gap: var(--gap-XL);
+    }
+  }
+  
+  .wrap {
+    flex-wrap: wrap;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .xtra-padding-btm {
+    padding-bottom: 2rem;
+  }
+  

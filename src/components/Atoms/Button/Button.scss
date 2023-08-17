@@ -1,0 +1,81 @@
+@import '../../../globalStyles/tools';
+
+button, .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--unit-8) var(--unit-16);
+    gap: var(--gap-S);
+    border: 2px solid var(--color-greyscale9);
+    color: var(--color-greyscale9);
+    font-family: var(--typo-accent);
+    font-size: var(--font-size-mobile);
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-weight: bold;
+    text-decoration: none!important;
+
+    a {
+        text-decoration: none;
+        margin-bottom: 0;
+        padding: 0;
+        color: inherit;
+        transition: none;
+        font-size: inherit;
+        line-height: inherit;
+        display: flex;
+        gap: var(--gap-S);
+        align-items: center;
+        mix-blend-mode: normal;
+
+        &:hover {
+            color: inherit;
+            transition: none;
+        }
+    }
+
+    svg {
+        fill: currentColor;
+    }
+
+    @include MQ ($tablet) {
+        font-size: var(--font-size-desktop);
+    }
+
+    &:hover, :target {
+        background-color: var(--color-greyscale9);
+        color: var(--color-white);
+
+        svg {
+            fill: currentColor;
+        }
+    }
+
+    &:active {
+        background-color: var(--color-greyscale8);
+        color: var(--color-white);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--color-blue);
+    }
+
+}
+
+.btn--accent {
+    background-color: var(--bg-color-blue);
+    color: var(--color-greyscale10);
+    border: none;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    mix-blend-mode: normal;
+
+    &:hover {
+        background-color: var(--bg-color-rose);
+        color: var(--color-white);
+    }
+}

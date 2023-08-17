@@ -1,0 +1,201 @@
+:root {
+    //Colors
+    //Accent colors:
+    --color-blue:                     #A7B9F9;
+    --color-lila:                     #BDBBFA;
+    --color-red:                      #FF595A;
+    --color-rose:                     #FA8787;
+    --color-green:                    #B8E2B0;
+    --color-mint:                     #CCE7D3;
+
+    //Greyscale:
+    --color-greyscale1:               #F5F5F5;
+    --color-greyscale2:               #EAEAEC;
+    --color-greyscale3:               #E6E6E6;
+    --color-greyscale4:               #E4E4E4;
+    --color-greyscale5:               #D9D9DB;
+    --color-greyscale6:               #BFC0C2;
+    --color-greyscale7:               #888989;
+    --color-greyscale8:               #565656;
+    --color-greyscale9:               #414141;
+    --color-greyscale10:              #222222;
+
+    //Neutral Colors:
+    --color-white:                    #ffffff;
+    --color-black:                    #121212;
+    --color-pearl:                    #F8F9FA;
+
+    //Notifications Colors:
+    --color-yellow:                   #F9D873;
+
+    --color-error:                    var(--color-red);
+    --color-warning:                  var(--color-yellow);
+    --color-success:                  var(--color-green);
+    --color-info:                     var(--color-blue);
+
+    //Color applications
+    //Backgrounds:
+    --bg-color-blue:                  var(--color-blue);
+    --bg-color-lila:                  var(--color-lila);
+    --bg-color-red:                   var(--color-red);
+    --bg-color-rose:                  var(--color-rose);
+    --bg-color-green:                 var(--color-green);
+    --bg-color-mint:                  var(--color-mint);
+    --bg-color-greyscale1:            var(--color-greyscale1);
+    --bg-color-greyscale2:            var(--color-greyscale2);
+    --bg-color-greyscale3:            var(--color-greyscale3);
+    --bg-color-greyscale4:            var(--color-greyscale4);
+    --bg-color-greyscale5:            var(--color-greyscale5);
+    --bg-color-greyscale6:            var(--color-greyscale6);
+    --bg-color-greyscale7:            var(--color-greyscale7);
+    --bg-color-greyscale8:            var(--color-greyscale8);
+    --bg-color-greyscale9:            var(--color-greyscale9);
+    --bg-color-greyscale10:           var(--color-greyscale10);
+    --bg-color-white:                 var(--color-white);
+    --bg-color-black:                 var(--color-black);
+    --bg-color-pearl:                 var(--color-pearl);
+    --bg-color-yellow:                var(--color-yellow);
+
+    //Units:
+    --unit-6:                          0.6rem;
+    --unit-8:                          0.8rem;
+    --unit-10:                           1rem;
+    --unit-12:                         1.2rem;
+    --unit-14:                         1.4rem;
+    --unit-16:                         1.6rem;
+    --unit-18:                         1.8rem;
+    --unit-20:                           2rem;
+    --unit-24:                         2.4rem;
+    --unit-28:                         2.8rem;
+    --unit-32:                         3.2rem;
+    --unit-36:                         3.6rem;
+    --unit-40:                           4rem;
+    --unit-48:                         4.8rem;
+    --unit-56:                         5.6rem;
+    --unit-64:                         6.4rem;
+    --unit-72:                         7.2rem;
+    --unit-80:                           8rem;
+    --unit-96:                         9.6rem;
+    --unit-104:                       10.4rem;
+    --unit-128:                       12.8rem;
+    --unit-160:                         16rem;
+    --unit-208:                       20.8rem;
+    --unit-256:                       25.6rem;
+
+    //Typography:
+    --typo-main:                     'Helvetica Light Regular', arial, sans-serif;
+    --typo-accent:                   'Heming Variable', ui-monospace,monospace;
+
+    --line-height-small:               1.2em;
+    --line-height-big:                 1.5em;
+    --letter-spacing-L:               0.2rem;
+    --letter-spacing-XL:              0.4rem;
+
+    --font-size-mobile:               var(--unit-16);
+    --font-size-desktop:              var(--unit-18);
+    --font-size-mobileS:              var(--unit-14);
+    --font-size-desktopS:             var(--unit-16);
+    --font-size-mobileL:              var(--unit-18);
+    --font-size-desktopL:             var(--unit-20);
+    --font-size-displayS:             4.7rem; 
+    --font-size-displayL:             6.9rem; 
+
+    //Topbar:
+    --topbar-height:                  7rem;
+
+    //Gaps:
+    --gap-XS:                         var(--unit-6);
+    --gap-S:                          var(--unit-8);
+    --gap-M:                          var(--unit-16);
+    --gap-L:                          var(--unit-24);
+    --gap-XL:                         var(--unit-32);
+
+    --gap-grid-S:                     var(--unit-40);
+    --gap-grid-M:                     var(--unit-80);
+    --gap-grid-L:                     var(--unit-128);
+
+    //Icons:
+    --icon-S:                         var(--unit-18);
+    --icon-M:                         var(--unit-20);
+    --icon-L:                         var(--unit-24);
+
+}
+
+@font-face {
+    font-family: 'Heming Variable';
+    src: local('Heming Variable'), local('Heming-Variable'),
+        url('../assets/heming_variable-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Light Regular';
+    src: local('Helvetica Light Regular'), local('Helvetica-Light-Regular'),
+        url('../assets/helvetica_light_regular-webfont.woff2') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
+
+* , *::before , *::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--typo-main);
+    color: var(--color-greyscale10);
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 160rem;
+    margin: auto;
+    scroll-behavior: smooth;
+    background-color: var(--bg-color-pearl);
+    max-width: 100%;
+    overflow-x: hidden;
+    cursor: default;
+    height: 100%;
+}  
+
+body, main, div#root {
+    height: 100%;
+}
+
+.main {
+    position: relative;
+}
+  
+// :focus {
+//     outline: none;
+//     border: 2px solid var(--color-rose);
+// }  
+
+::selection {
+    background-color: var(--bg-color-lila);
+    color: var(--color-greyscale10);
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 1.6rem 0;
+    border-bottom: 2px solid var(--bg-color-greyscale7);
+    border-top: 2px solid var(--bg-color-greyscale7);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    position: relative;
+}

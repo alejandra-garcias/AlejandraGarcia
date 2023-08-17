@@ -1,0 +1,40 @@
+$desktop-big:    72rem;
+$desktop:        65rem;
+$desktop-small:  51rem;
+$tablet-big:     50rem;
+$tablet:         40rem;
+$mobile:         25rem;
+
+@mixin MQ($mediaquery_unit: $mobile) {
+    @media all and (min-width: $mediaquery_unit) {
+        @content;
+    }
+}
+
+$map-layers: (
+    "below":        -1,
+    "default":      0,
+    "above":        1,
+    "over":         2,
+    "absolute":     3
+);
+
+@function z($layer) {
+    @return map-get($map-layers, $layer);
+}
+
+@mixin paddingX {
+    padding: 0 var(--unit-16);
+
+    @include MQ($tablet) {
+        padding: 0 var(--unit-80);
+    }
+
+    @include MQ($desktop-small) {
+        padding: 0 var(--unit-80);
+    }
+
+    @include MQ($desktop) {
+        padding: 0 var(--unit-160);
+    }
+}
