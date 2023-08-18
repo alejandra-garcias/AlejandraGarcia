@@ -10,14 +10,15 @@ import React from "./svg/React";
 import RightArrow from "./svg/RightArrow";
 import Sass from "./svg/Sass";
 import Tilda from "./svg/Tilda";
-import Wordpress from "./svg/Wordpress";
+import Bootstrap from "./svg/Bootstrap";
+import Laravel from "./svg/Laravel";
 
 export const IconMap = {
     "leave-to": <LeaveTo/>,
     "right-arrow": <RightArrow/>,
     "figma": <Figma/>,
     "tilda": <Tilda/>,
-    "wordpress": <Wordpress/>,
+    "bootsrap": <Bootstrap/>,
     "html": <Html/>,
     "css": <Css/>,
     "javascript": <Javascript/>,
@@ -26,4 +27,5 @@ export const IconMap = {
     "elementor": <Elementor/>,
     "php": <Php/>,    
     "sass": <Sass/>,
+    "laravel": <Laravel/>,
 }
