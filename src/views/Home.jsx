@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { projectContext } from "../App";
 import Cover from "../components/Cover/Cover";
-
+import Filter from "../components/Filter/Filter";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 
 function Home() {
@@ -28,7 +28,7 @@ function Home() {
     <>
       <Cover />
       <div id="projects"></div>
-      
+      <Filter onFilter={handleFilter}/>
       <div className="col3">
         {filteredProjects.map((project) => (
           <ProjectCard

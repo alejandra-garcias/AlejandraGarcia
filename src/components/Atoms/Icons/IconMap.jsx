@@ -18,7 +18,7 @@ export const IconMap = {
     "right-arrow": <RightArrow/>,
     "figma": <Figma/>,
     "tilda": <Tilda/>,
-    "bootsrap": <Bootstrap/>,
+    "bootstrap": <Bootstrap/>,
     "html": <Html/>,
     "css": <Css/>,
     "javascript": <Javascript/>,
